@@ -157,6 +157,99 @@
             </objects>
             <point key="canvasLocation" x="968" y="-426"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="7eA-LW-azu">
+            <objects>
+                <viewController id="hbU-tb-suJ" customClass="LoginViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Y2-nG-mHP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hc6-8Q-Kwp" userLabel="EmailView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="180"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="2gy-As-KPc">
+                                        <rect key="frame" x="0.0" y="20" width="414" height="140"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pjj-Du-dnn">
+                                        <rect key="frame" x="49" y="51" width="317" height="49"/>
+                                        <color key="textColor" name="BrandBlue"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pjj-Du-dnn" secondAttribute="bottom" constant="80" id="Aba-OV-3co"/>
+                                    <constraint firstItem="2gy-As-KPc" firstAttribute="leading" secondItem="hc6-8Q-Kwp" secondAttribute="leading" id="DEc-DK-eUc"/>
+                                    <constraint firstAttribute="bottom" secondItem="2gy-As-KPc" secondAttribute="bottom" constant="20" id="I2j-U2-Kqq"/>
+                                    <constraint firstAttribute="right" secondItem="pjj-Du-dnn" secondAttribute="right" constant="48" id="YOp-X0-ae2"/>
+                                    <constraint firstItem="pjj-Du-dnn" firstAttribute="left" secondItem="hc6-8Q-Kwp" secondAttribute="left" constant="49" id="cDS-OM-w88"/>
+                                    <constraint firstAttribute="height" constant="180" id="fXo-Rr-jen"/>
+                                    <constraint firstAttribute="trailing" secondItem="2gy-As-KPc" secondAttribute="trailing" id="iQj-bb-aJo"/>
+                                    <constraint firstItem="2gy-As-KPc" firstAttribute="top" secondItem="hc6-8Q-Kwp" secondAttribute="top" constant="20" id="lWX-fq-rQK"/>
+                                    <constraint firstItem="pjj-Du-dnn" firstAttribute="top" secondItem="hc6-8Q-Kwp" secondAttribute="top" constant="51" id="wlR-rU-J5R"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ms-DB-2Xz" userLabel="PasswordView">
+                                <rect key="frame" x="0.0" y="124" width="414" height="180"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="YfG-xR-ho3">
+                                        <rect key="frame" x="0.0" y="20" width="414" height="140"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U3w-sk-gRe">
+                                        <rect key="frame" x="49" y="48" width="317" height="52"/>
+                                        <color key="textColor" name="BrandBlue"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oES-nb-qFJ">
+                                        <rect key="frame" x="0.0" y="131" width="414" height="49"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" name="BrandLightBlue"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="hbU-tb-suJ" eventType="touchUpInside" id="d5E-LZ-1rp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="U3w-sk-gRe" secondAttribute="bottom" constant="80" id="CU9-g1-EGW"/>
+                                    <constraint firstAttribute="trailing" secondItem="YfG-xR-ho3" secondAttribute="trailing" id="JB1-Go-4xZ"/>
+                                    <constraint firstItem="oES-nb-qFJ" firstAttribute="leading" secondItem="4ms-DB-2Xz" secondAttribute="leading" id="OOw-cz-Sz9"/>
+                                    <constraint firstItem="U3w-sk-gRe" firstAttribute="top" secondItem="4ms-DB-2Xz" secondAttribute="top" constant="48" id="P6c-HI-A4b"/>
+                                    <constraint firstItem="U3w-sk-gRe" firstAttribute="left" secondItem="4ms-DB-2Xz" secondAttribute="left" constant="49" id="h6N-PJ-Vle"/>
+                                    <constraint firstAttribute="bottom" secondItem="oES-nb-qFJ" secondAttribute="bottom" id="hqc-XU-Zde"/>
+                                    <constraint firstItem="YfG-xR-ho3" firstAttribute="leading" secondItem="4ms-DB-2Xz" secondAttribute="leading" id="hxk-Td-vOV"/>
+                                    <constraint firstAttribute="right" secondItem="U3w-sk-gRe" secondAttribute="right" constant="48" id="p7w-nr-NOb"/>
+                                    <constraint firstItem="oES-nb-qFJ" firstAttribute="top" secondItem="U3w-sk-gRe" secondAttribute="bottom" constant="31" id="sgu-zd-eWW"/>
+                                    <constraint firstAttribute="trailing" secondItem="oES-nb-qFJ" secondAttribute="trailing" id="ski-8K-zUJ"/>
+                                    <constraint firstItem="YfG-xR-ho3" firstAttribute="top" secondItem="4ms-DB-2Xz" secondAttribute="top" constant="20" id="w5l-V0-J6L"/>
+                                    <constraint firstAttribute="height" constant="180" id="wkC-t0-0rS"/>
+                                    <constraint firstAttribute="bottom" secondItem="YfG-xR-ho3" secondAttribute="bottom" constant="20" id="zu9-B2-Wnw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uWG-Vh-uUx"/>
+                        <color key="backgroundColor" red="0.1647058824" green="0.78039215689999997" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4ms-DB-2Xz" firstAttribute="trailing" secondItem="uWG-Vh-uUx" secondAttribute="trailing" id="1vP-Wn-Y2o"/>
+                            <constraint firstItem="hc6-8Q-Kwp" firstAttribute="trailing" secondItem="uWG-Vh-uUx" secondAttribute="trailing" id="4do-vZ-tyV"/>
+                            <constraint firstItem="4ms-DB-2Xz" firstAttribute="leading" secondItem="uWG-Vh-uUx" secondAttribute="leading" id="7HF-jq-e6y"/>
+                            <constraint firstItem="hc6-8Q-Kwp" firstAttribute="leading" secondItem="uWG-Vh-uUx" secondAttribute="leading" id="Koo-xp-lLV"/>
+                            <constraint firstItem="4ms-DB-2Xz" firstAttribute="top" secondItem="hc6-8Q-Kwp" secondAttribute="bottom" constant="-100" id="eN7-iT-gws"/>
+                            <constraint firstItem="hc6-8Q-Kwp" firstAttribute="top" secondItem="uWG-Vh-uUx" secondAttribute="top" id="szd-Eq-v3K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextfield" destination="pjj-Du-dnn" id="cxI-eK-qh5"/>
+                        <outlet property="passwordTextfield" destination="U3w-sk-gRe" id="c8H-ta-8Zq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Hk-Ia-dXj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="644"/>
+        </scene>
     </scenes>
     <resources>
         <image name="textfield" width="298" height="93"/>
