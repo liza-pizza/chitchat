@@ -12,12 +12,12 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Home View Controller" customClass="ViewController" customModule="chitchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Home View Controller" customClass="HomeViewController" customModule="chitchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chitchat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdd-e1-dIP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdd-e1-dIP">
                                 <rect key="frame" x="50" y="418" width="314" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="mIa-Xr-nME"/>
@@ -64,6 +64,9 @@
                             <constraint firstItem="Xdd-e1-dIP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yHG-No-kFs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="Xdd-e1-dIP" id="vwr-4U-vI5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,7 +75,7 @@
         <!--Register View Controller-->
         <scene sceneID="Bnj-hx-tCB">
             <objects>
-                <viewController id="czq-3R-hIH" userLabel="Register View Controller" sceneMemberID="viewController">
+                <viewController id="czq-3R-hIH" userLabel="Register View Controller" customClass="RegisterViewController" customModule="chitchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Bk-tI-ych">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,6 +92,9 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" name="BrandBlue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="czq-3R-hIH" eventType="touchUpInside" id="pFc-6n-QwX"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qqN-bj-Ioc" userLabel="Password Textfield">
                                         <rect key="frame" x="48" y="50" width="318" height="50"/>
@@ -152,6 +158,10 @@
                             <constraint firstItem="zeS-lL-iO8" firstAttribute="leading" secondItem="WsF-6l-kCV" secondAttribute="leading" id="vkg-O9-IYM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="02z-N8-gsF" id="VeZ-3y-tUa"/>
+                        <outlet property="passwordTextfield" destination="qqN-bj-Ioc" id="BcA-xd-HQi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvB-6G-1UH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -160,7 +170,7 @@
         <!--Login View Controller-->
         <scene sceneID="7eA-LW-azu">
             <objects>
-                <viewController id="hbU-tb-suJ" customClass="LoginViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hbU-tb-suJ" customClass="LoginViewController" customModule="chitchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Y2-nG-mHP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,7 +219,7 @@
                                             <color key="titleColor" name="BrandLightBlue"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginPressed:" destination="hbU-tb-suJ" eventType="touchUpInside" id="d5E-LZ-1rp"/>
+                                            <action selector="loginPressed:" destination="hbU-tb-suJ" eventType="touchUpInside" id="aWn-pt-FEJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -242,8 +252,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailTextfield" destination="pjj-Du-dnn" id="cxI-eK-qh5"/>
-                        <outlet property="passwordTextfield" destination="U3w-sk-gRe" id="c8H-ta-8Zq"/>
+                        <outlet property="emailTextfield" destination="pjj-Du-dnn" id="eKt-QA-R2L"/>
+                        <outlet property="passwordTextfield" destination="U3w-sk-gRe" id="eqL-cr-wbi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Hk-Ia-dXj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -253,7 +263,7 @@
         <!--Chat View Controller-->
         <scene sceneID="qNl-K9-GPk">
             <objects>
-                <viewController id="Mq9-eF-vnw" customClass="ChatViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mq9-eF-vnw" customClass="ChatViewController" customModule="chitchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N9l-KP-OgI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,7 +305,7 @@
                                         <color key="tintColor" name="BrandLightPurple"/>
                                         <state key="normal" image="paperplane.fill" catalog="system"/>
                                         <connections>
-                                            <action selector="sendPressed:" destination="Mq9-eF-vnw" eventType="touchUpInside" id="XSb-ep-M3y"/>
+                                            <action selector="sendPressed:" destination="Mq9-eF-vnw" eventType="touchUpInside" id="3Rw-mm-x8L"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -324,8 +334,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="jmo-sP-aTp"/>
                     <connections>
-                        <outlet property="messageTextfield" destination="DMy-1A-gca" id="hlR-vc-MFl"/>
-                        <outlet property="tableView" destination="Mag-Nx-mZP" id="URg-kd-k0E"/>
+                        <outlet property="messageTextfield" destination="DMy-1A-gca" id="mnT-57-BEI"/>
+                        <outlet property="tableView" destination="Mag-Nx-mZP" id="i49-TX-mb4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebc-Rj-sOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
