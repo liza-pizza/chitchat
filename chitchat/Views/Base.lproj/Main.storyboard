@@ -36,6 +36,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" name="BrandBlue"/>
                                 </state>
+                                <connections>
+                                    <segue destination="czq-3R-hIH" kind="show" id="O5G-i1-GpF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjl-vS-9rn">
                                 <rect key="frame" x="0.0" y="801" width="414" height="61"/>
@@ -47,6 +50,9 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hbU-tb-suJ" kind="show" id="et9-VV-o74"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -77,11 +83,11 @@
             <objects>
                 <viewController id="czq-3R-hIH" userLabel="Register View Controller" customClass="RegisterViewController" customModule="chitchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Bk-tI-ych">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeS-lL-iO8" userLabel="Password View">
-                                <rect key="frame" x="0.0" y="124" width="414" height="180"/>
+                                <rect key="frame" x="0.0" y="80" width="414" height="180"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="dLI-ix-VmN">
                                         <rect key="frame" x="0.0" y="20" width="414" height="140"/>
@@ -114,14 +120,14 @@
                                     <constraint firstAttribute="bottom" secondItem="CkG-HW-sfW" secondAttribute="bottom" id="Zd6-Ug-CKu"/>
                                     <constraint firstAttribute="height" constant="180" id="ah5-kf-kVQ"/>
                                     <constraint firstItem="dLI-ix-VmN" firstAttribute="leading" secondItem="zeS-lL-iO8" secondAttribute="leading" id="aif-ez-fHn"/>
-                                    <constraint firstAttribute="trailing" secondItem="qqN-bj-Ioc" secondAttribute="trailing" constant="48" id="iOl-Ni-L2x"/>
-                                    <constraint firstItem="qqN-bj-Ioc" firstAttribute="leading" secondItem="zeS-lL-iO8" secondAttribute="leading" constant="48" id="nh9-nE-w3N"/>
+                                    <constraint firstAttribute="right" secondItem="qqN-bj-Ioc" secondAttribute="right" constant="48" id="iOl-Ni-L2x"/>
+                                    <constraint firstItem="qqN-bj-Ioc" firstAttribute="left" secondItem="zeS-lL-iO8" secondAttribute="left" constant="48" id="nh9-nE-w3N"/>
                                     <constraint firstItem="CkG-HW-sfW" firstAttribute="leading" secondItem="zeS-lL-iO8" secondAttribute="leading" id="q5Y-Sq-ms5"/>
                                     <constraint firstAttribute="trailing" secondItem="CkG-HW-sfW" secondAttribute="trailing" id="wgb-1m-svq"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZV8-Jg-9IM" userLabel="Email View">
-                                <rect key="frame" x="0.0" y="44" width="414" height="180"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="ZaO-bz-gCP">
                                         <rect key="frame" x="0.0" y="20" width="414" height="140"/>
@@ -139,10 +145,10 @@
                                     <constraint firstItem="ZaO-bz-gCP" firstAttribute="leading" secondItem="ZV8-Jg-9IM" secondAttribute="leading" id="Brx-gc-W2a"/>
                                     <constraint firstItem="02z-N8-gsF" firstAttribute="top" secondItem="ZV8-Jg-9IM" secondAttribute="top" constant="50" id="IIl-Ge-D8B"/>
                                     <constraint firstAttribute="bottom" secondItem="02z-N8-gsF" secondAttribute="bottom" constant="80" id="UUY-vE-3og"/>
-                                    <constraint firstItem="02z-N8-gsF" firstAttribute="leading" secondItem="ZV8-Jg-9IM" secondAttribute="leading" constant="48" id="UkY-Oi-szx"/>
+                                    <constraint firstItem="02z-N8-gsF" firstAttribute="left" secondItem="ZV8-Jg-9IM" secondAttribute="left" constant="48" id="UkY-Oi-szx"/>
                                     <constraint firstAttribute="bottom" secondItem="ZaO-bz-gCP" secondAttribute="bottom" constant="20" id="XCV-KO-dVo"/>
                                     <constraint firstAttribute="trailing" secondItem="ZaO-bz-gCP" secondAttribute="trailing" id="eXN-Eg-9Ta"/>
-                                    <constraint firstAttribute="trailing" secondItem="02z-N8-gsF" secondAttribute="trailing" constant="48" id="mfw-US-bd4"/>
+                                    <constraint firstAttribute="right" secondItem="02z-N8-gsF" secondAttribute="right" constant="48" id="mfw-US-bd4"/>
                                     <constraint firstAttribute="height" constant="180" id="pMp-oj-gZG"/>
                                 </constraints>
                             </view>
@@ -158,9 +164,11 @@
                             <constraint firstItem="zeS-lL-iO8" firstAttribute="leading" secondItem="WsF-6l-kCV" secondAttribute="leading" id="vkg-O9-IYM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KhM-xG-Sd2"/>
                     <connections>
                         <outlet property="emailTextField" destination="02z-N8-gsF" id="VeZ-3y-tUa"/>
                         <outlet property="passwordTextfield" destination="qqN-bj-Ioc" id="BcA-xd-HQi"/>
+                        <segue destination="Mq9-eF-vnw" kind="show" id="O5i-13-nYZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvB-6G-1UH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -172,11 +180,11 @@
             <objects>
                 <viewController id="hbU-tb-suJ" customClass="LoginViewController" customModule="chitchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Y2-nG-mHP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hc6-8Q-Kwp" userLabel="EmailView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="180"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="2gy-As-KPc">
                                         <rect key="frame" x="0.0" y="20" width="414" height="140"/>
@@ -201,7 +209,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ms-DB-2Xz" userLabel="PasswordView">
-                                <rect key="frame" x="0.0" y="124" width="414" height="180"/>
+                                <rect key="frame" x="0.0" y="80" width="414" height="180"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="YfG-xR-ho3">
                                         <rect key="frame" x="0.0" y="20" width="414" height="140"/>
@@ -251,9 +259,11 @@
                             <constraint firstItem="hc6-8Q-Kwp" firstAttribute="top" secondItem="uWG-Vh-uUx" secondAttribute="top" id="szd-Eq-v3K"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="CWb-vP-Afo"/>
                     <connections>
                         <outlet property="emailTextfield" destination="pjj-Du-dnn" id="eKt-QA-R2L"/>
                         <outlet property="passwordTextfield" destination="U3w-sk-gRe" id="eqL-cr-wbi"/>
+                        <segue destination="Mq9-eF-vnw" kind="show" id="SIW-cY-2Nl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Hk-Ia-dXj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -265,11 +275,11 @@
             <objects>
                 <viewController id="Mq9-eF-vnw" customClass="ChatViewController" customModule="chitchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N9l-KP-OgI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mag-Nx-mZP">
-                                <rect key="frame" x="0.0" y="44" width="414" height="758"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="748"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="mJC-Np-yEy">
@@ -283,7 +293,7 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5o-JN-FZN">
-                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="748" width="414" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMy-1A-gca">
                                         <rect key="frame" x="20" y="20" width="314" height="40"/>
@@ -343,6 +353,9 @@
             <point key="canvasLocation" x="1935" y="141"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="SIW-cY-2Nl"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <image name="textfield" width="298" height="93"/>
