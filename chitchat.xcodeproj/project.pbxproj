@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0662FCA28C3778E9C6056F /* Pods_chitchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F44272E9F3F3BC3D21F0D59 /* Pods_chitchat.framework */; };
 		6E6B2B6D26C68568003D91C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B2B6C26C68568003D91C7 /* AppDelegate.swift */; };
 		6E6B2B6F26C68568003D91C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B2B6E26C68568003D91C7 /* SceneDelegate.swift */; };
 		6E6B2B7126C68568003D91C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B2B7026C68568003D91C7 /* ViewController.swift */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F44272E9F3F3BC3D21F0D59 /* Pods_chitchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chitchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5565AB59DA60E3326427CFCE /* Pods-chitchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chitchat.release.xcconfig"; path = "Target Support Files/Pods-chitchat/Pods-chitchat.release.xcconfig"; sourceTree = "<group>"; };
 		6E6B2B6926C68568003D91C7 /* chitchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chitchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6B2B6C26C68568003D91C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E6B2B6E26C68568003D91C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		6EF6877E26C7CB2900F32263 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6EF6878026C7CB4100F32263 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6EF6878226C7CB6700F32263 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		CBDD34D59800493656772A7D /* Pods-chitchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chitchat.debug.xcconfig"; path = "Target Support Files/Pods-chitchat/Pods-chitchat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0662FCA28C3778E9C6056F /* Pods_chitchat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,8 @@
 			children = (
 				6E6B2B6B26C68568003D91C7 /* chitchat */,
 				6E6B2B6A26C68568003D91C7 /* Products */,
+				A97DF7377D23199BD6EE4D9A /* Pods */,
+				F6AB9D9FB9E3F06710063DE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +110,24 @@
 			path = chitchat;
 			sourceTree = "<group>";
 		};
+		A97DF7377D23199BD6EE4D9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBDD34D59800493656772A7D /* Pods-chitchat.debug.xcconfig */,
+				5565AB59DA60E3326427CFCE /* Pods-chitchat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6AB9D9FB9E3F06710063DE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F44272E9F3F3BC3D21F0D59 /* Pods_chitchat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E6B2B7D26C6856A003D91C7 /* Build configuration list for PBXNativeTarget "chitchat" */;
 			buildPhases = (
+				BF63DAAE181568BCB5FF0295 /* [CP] Check Pods Manifest.lock */,
 				6E6B2B6526C68568003D91C7 /* Sources */,
 				6E6B2B6626C68568003D91C7 /* Frameworks */,
 				6E6B2B6726C68568003D91C7 /* Resources */,
+				E337EEF9A5D397710CBD0022 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +194,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF63DAAE181568BCB5FF0295 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chitchat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E337EEF9A5D397710CBD0022 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chitchat/Pods-chitchat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chitchat/Pods-chitchat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chitchat/Pods-chitchat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E6B2B6526C68568003D91C7 /* Sources */ = {
@@ -323,6 +392,7 @@
 		};
 		6E6B2B7E26C6856A003D91C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBDD34D59800493656772A7D /* Pods-chitchat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,6 +412,7 @@
 		};
 		6E6B2B7F26C6856A003D91C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5565AB59DA60E3326427CFCE /* Pods-chitchat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
