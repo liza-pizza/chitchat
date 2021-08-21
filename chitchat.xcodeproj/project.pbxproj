@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3D0662FCA28C3778E9C6056F /* Pods_chitchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F44272E9F3F3BC3D21F0D59 /* Pods_chitchat.framework */; };
+		6E61D6F226D1371000F662A4 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61D6F126D1371000F662A4 /* StringExtensions.swift */; };
 		6E6B2B6D26C68568003D91C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B2B6C26C68568003D91C7 /* AppDelegate.swift */; };
 		6E6B2B6F26C68568003D91C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B2B6E26C68568003D91C7 /* SceneDelegate.swift */; };
 		6E6B2B7126C68568003D91C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B2B7026C68568003D91C7 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		0F44272E9F3F3BC3D21F0D59 /* Pods_chitchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chitchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5565AB59DA60E3326427CFCE /* Pods-chitchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chitchat.release.xcconfig"; path = "Target Support Files/Pods-chitchat/Pods-chitchat.release.xcconfig"; sourceTree = "<group>"; };
+		6E61D6F126D1371000F662A4 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		6E6B2B6926C68568003D91C7 /* chitchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chitchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6B2B6C26C68568003D91C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E6B2B6E26C68568003D91C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				6EF6877E26C7CB2900F32263 /* RegisterViewController.swift */,
 				6EF6878026C7CB4100F32263 /* LoginViewController.swift */,
 				6EF6878226C7CB6700F32263 /* ChatViewController.swift */,
+				6E61D6F126D1371000F662A4 /* StringExtensions.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -116,7 +119,6 @@
 				CBDD34D59800493656772A7D /* Pods-chitchat.debug.xcconfig */,
 				5565AB59DA60E3326427CFCE /* Pods-chitchat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -242,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E61D6F226D1371000F662A4 /* StringExtensions.swift in Sources */,
 				6EF6878126C7CB4100F32263 /* LoginViewController.swift in Sources */,
 				6E6B2B7126C68568003D91C7 /* ViewController.swift in Sources */,
 				6EF6877F26C7CB2900F32263 /* RegisterViewController.swift in Sources */,
