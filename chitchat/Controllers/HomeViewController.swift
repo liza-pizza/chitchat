@@ -29,9 +29,7 @@ class HomeViewController: UIViewController {
                 self.titleLabel.text = $0
             }
             
-           
-            let sequence = ActionSequence(actions: DelayAction(duration: 0.5), action, DelayAction(duration: 0.5))
-            
+    
         
             scheduler.run(action: action)
         }
