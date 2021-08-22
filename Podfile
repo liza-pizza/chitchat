@@ -7,6 +7,7 @@ target 'chitchat' do
 
   # Pods for chitchat
   pod "TweenKit"
+
   pod "Firebase/Auth"
 
 end
