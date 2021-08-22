@@ -23,15 +23,8 @@ class RegisterViewController: UIViewController {
                 
                 if let e = error{
                     
-                    //when error is generated generate an alert
-                    
-                    let alert = UIAlertController(title: "Oh no, something went wrong!", message: e.localizedDescription, preferredStyle: .alert)
-                    
-                    
-                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-                                                    print(e.localizedDescription)
-                    }))
-                    
+                    let alert = UIAlertController().alert(with: e)
+             
                     self.present(alert, animated: true, completion: nil)
                     
                     
