@@ -24,14 +24,11 @@ class RegisterViewController: UIViewController {
                 if let e = error{
                     
                     let alert = UIAlertController().alert(with: e)
-             
                     self.present(alert, animated: true, completion: nil)
-                    
                     
                 }else {
                     
                     self.performSegue(withIdentifier: "RegisterToChat", sender: self)
-                    
                 }
             }
             
