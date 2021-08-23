@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3D0662FCA28C3778E9C6056F /* Pods_chitchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F44272E9F3F3BC3D21F0D59 /* Pods_chitchat.framework */; };
-		6E61D6F226D1371000F662A4 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61D6F126D1371000F662A4 /* StringExtensions.swift */; };
+		6E61D6F226D1371000F662A4 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61D6F126D1371000F662A4 /* StringExtension.swift */; };
 		6E6B2B6D26C68568003D91C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B2B6C26C68568003D91C7 /* AppDelegate.swift */; };
 		6E6B2B6F26C68568003D91C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B2B6E26C68568003D91C7 /* SceneDelegate.swift */; };
 		6E6B2B7126C68568003D91C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B2B7026C68568003D91C7 /* ViewController.swift */; };
 		6E6B2B7426C68568003D91C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6B2B7226C68568003D91C7 /* Main.storyboard */; };
 		6E6B2B7626C6856A003D91C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6B2B7526C6856A003D91C7 /* Assets.xcassets */; };
 		6E6B2B7926C6856A003D91C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6B2B7726C6856A003D91C7 /* LaunchScreen.storyboard */; };
-		6EA0C18026D1474900E3A73C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EA0C17F26D1474900E3A73C /* GoogleService-Info.plist */; };
+		6EEC35D926D256EF0031C9A8 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEC35D826D256EF0031C9A8 /* UIAlertControllerExtension.swift */; };
+		6EEC35DB26D263DB0031C9A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EEC35DA26D263DB0031C9A8 /* GoogleService-Info.plist */; };
 		6EF6877D26C7CB0E00F32263 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF6877C26C7CB0E00F32263 /* HomeViewController.swift */; };
 		6EF6877F26C7CB2900F32263 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF6877E26C7CB2900F32263 /* RegisterViewController.swift */; };
 		6EF6878126C7CB4100F32263 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF6878026C7CB4100F32263 /* LoginViewController.swift */; };
@@ -25,7 +26,7 @@
 /* Begin PBXFileReference section */
 		0F44272E9F3F3BC3D21F0D59 /* Pods_chitchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chitchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5565AB59DA60E3326427CFCE /* Pods-chitchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chitchat.release.xcconfig"; path = "Target Support Files/Pods-chitchat/Pods-chitchat.release.xcconfig"; sourceTree = "<group>"; };
-		6E61D6F126D1371000F662A4 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		6E61D6F126D1371000F662A4 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		6E6B2B6926C68568003D91C7 /* chitchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chitchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6B2B6C26C68568003D91C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E6B2B6E26C68568003D91C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +35,8 @@
 		6E6B2B7526C6856A003D91C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E6B2B7826C6856A003D91C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E6B2B7A26C6856A003D91C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EA0C17F26D1474900E3A73C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6EEC35D826D256EF0031C9A8 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		6EEC35DA26D263DB0031C9A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6EF6877C26C7CB0E00F32263 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6EF6877E26C7CB2900F32263 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6EF6878026C7CB4100F32263 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +78,8 @@
 				6EF6877E26C7CB2900F32263 /* RegisterViewController.swift */,
 				6EF6878026C7CB4100F32263 /* LoginViewController.swift */,
 				6EF6878226C7CB6700F32263 /* ChatViewController.swift */,
-				6E61D6F126D1371000F662A4 /* StringExtensions.swift */,
+				6E61D6F126D1371000F662A4 /* StringExtension.swift */,
+				6EEC35D826D256EF0031C9A8 /* UIAlertControllerExtension.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -110,8 +113,8 @@
 				6E6B2B7026C68568003D91C7 /* ViewController.swift */,
 				6E6B2B7526C6856A003D91C7 /* Assets.xcassets */,
 				6E6B2B7726C6856A003D91C7 /* LaunchScreen.storyboard */,
+				6EEC35DA26D263DB0031C9A8 /* GoogleService-Info.plist */,
 				6E6B2B7A26C6856A003D91C7 /* Info.plist */,
-				6EA0C17F26D1474900E3A73C /* GoogleService-Info.plist */,
 			);
 			path = chitchat;
 			sourceTree = "<group>";
@@ -193,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E6B2B7926C6856A003D91C7 /* LaunchScreen.storyboard in Resources */,
-				6EA0C18026D1474900E3A73C /* GoogleService-Info.plist in Resources */,
+				6EEC35DB26D263DB0031C9A8 /* GoogleService-Info.plist in Resources */,
 				6E6B2B7626C6856A003D91C7 /* Assets.xcassets in Resources */,
 				6E6B2B7426C68568003D91C7 /* Main.storyboard in Resources */,
 			);
@@ -248,11 +251,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E61D6F226D1371000F662A4 /* StringExtensions.swift in Sources */,
+				6E61D6F226D1371000F662A4 /* StringExtension.swift in Sources */,
 				6EF6878126C7CB4100F32263 /* LoginViewController.swift in Sources */,
 				6E6B2B7126C68568003D91C7 /* ViewController.swift in Sources */,
 				6EF6877F26C7CB2900F32263 /* RegisterViewController.swift in Sources */,
 				6EF6878326C7CB6700F32263 /* ChatViewController.swift in Sources */,
+				6EEC35D926D256EF0031C9A8 /* UIAlertControllerExtension.swift in Sources */,
 				6E6B2B6D26C68568003D91C7 /* AppDelegate.swift in Sources */,
 				6E6B2B6F26C68568003D91C7 /* SceneDelegate.swift in Sources */,
 				6EF6877D26C7CB0E00F32263 /* HomeViewController.swift in Sources */,
