@@ -343,7 +343,13 @@
                             <constraint firstItem="Mag-Nx-mZP" firstAttribute="trailing" secondItem="XNm-XQ-XnB" secondAttribute="trailing" id="ueK-K8-5Vr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jmo-sP-aTp"/>
+                    <navigationItem key="navigationItem" id="jmo-sP-aTp">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="2In-dL-rRv">
+                            <connections>
+                                <action selector="logoutButtonPressed:" destination="Mq9-eF-vnw" id="TL6-Qm-XZ9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextfield" destination="DMy-1A-gca" id="mnT-57-BEI"/>
                         <outlet property="tableView" destination="Mag-Nx-mZP" id="i49-TX-mb4"/>
