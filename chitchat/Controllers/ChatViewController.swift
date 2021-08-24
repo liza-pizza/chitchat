@@ -28,6 +28,7 @@ class ChatViewController: UIViewController {
         title = K.appName
         navigationItem.hidesBackButton = true
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
+        loadMessages()
     }
     
     
@@ -49,6 +50,33 @@ class ChatViewController: UIViewController {
         }
     }
     
+    
+    func loadMessages (){
+        messages = []
+        db.collection(K.FStore.collectionName).getDocuments { querySnapshot, error in
+            if let e = error{
+                print("there was an error \(e)")
+            }
+            else {
+                if let snapshotDocuments = querySnapshot?.documents{
+                    for doc in snapshotDocuments {
+                        let data = doc.data()
+                        
+                        //data is of type Any
+                        if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
+                            let newMessage = Message(sender: messageSender, body: messageBody)
+                            self.messages.append(newMessage)
+                            
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) {
         let firebaseAuth = Auth.auth()
