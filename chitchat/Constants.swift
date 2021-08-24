@@ -6,3 +6,9 @@
 //
 
 import Foundation
+ 
+struct K {
+    static let appName = "chitchat"
+    static let registerSegue = "RegisterToChat"
+    static let loginSegue = "LoginToChat"
+}

@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = "chatchit"
+        titleLabel.text = K.appName
     }
     
     
@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
         super.viewDidAppear(animated)
         
         
-        let action = InterpolationAction(from: "chatchit", to: "chitchat", duration: 0.7, easing: .exponentialInOut) { [unowned self] in
+        let action = InterpolationAction(from: "chatchit", to: K.appName, duration: 0.7, easing: .exponentialInOut) { [unowned self] in
             self.titleLabel.text = $0
         }
         
