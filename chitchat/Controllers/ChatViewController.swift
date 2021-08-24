@@ -15,11 +15,7 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
     
-    var messages: [Message] = [
-        Message(sender: "1@2.com", body: "hiii"),
-        Message(sender: "a@b.com", body: "hello"),
-        Message(sender: "1@2.com", body: "sup")
-    ]
+    var messages: [Message] = []
     
     
     override func viewDidLoad() {
@@ -37,7 +33,8 @@ class ChatViewController: UIViewController {
         if let messageBody = messageTextfield.text, let messagesender = Auth.auth().currentUser?.email{
             db.collection(K.FStore.collectionName).addDocument(data:[
                                                                 K.FStore.senderField : messagesender,
-                                                                K.FStore.bodyField: messageBody]) { error in
+                                                                K.FStore.bodyField: messageBody,
+                                                                K.FStore.dateField: Date().timeIntervalSince1970]) { error in
                 if let e = error{
                     print("oops there was some error, \(e)")
                     
@@ -52,32 +49,35 @@ class ChatViewController: UIViewController {
     
     
     func loadMessages (){
-        db.collection(K.FStore.collectionName).addSnapshotListener { querySnapshot, error in
-            
-            self.messages = []
-            
-            if let e = error{
-                print("there was an error \(e)")
-            }
-            else {
-                if let snapshotDocuments = querySnapshot?.documents{
-                    for doc in snapshotDocuments {
-                        let data = doc.data()
-                        
-                        //data is of type Any
-                        if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
-                            let newMessage = Message(sender: messageSender, body: messageBody)
-                            self.messages.append(newMessage)
+        //messages are by default sorted by id in firestore
+        db.collection(K.FStore.collectionName)
+            .order(by: K.FStore.dateField)
+            .addSnapshotListener { querySnapshot, error in
+                
+                self.messages = []
+                
+                if let e = error{
+                    print("there was an error \(e)")
+                }
+                else {
+                    if let snapshotDocuments = querySnapshot?.documents{
+                        for doc in snapshotDocuments {
+                            let data = doc.data()
                             
-                            DispatchQueue.main.async {
-                                self.tableView.reloadData()
+                            //data is of type Any
+                            if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
+                                let newMessage = Message(sender: messageSender, body: messageBody)
+                                self.messages.append(newMessage)
+                                
+                                DispatchQueue.main.async {
+                                    self.tableView.reloadData()
+                                }
+                                
                             }
-                            
                         }
                     }
                 }
             }
-        }
     }
     
     @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) {
