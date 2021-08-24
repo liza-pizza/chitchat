@@ -6,12 +6,11 @@
 //
 
 import UIKit
-import FirebaseAuth
+import Firebase
 
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var passwordTextfield: UITextField!
-    
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBAction func registerPressed(_ sender: Any) {
