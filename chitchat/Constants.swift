@@ -22,9 +22,9 @@ struct K {
     }
     
     struct AppColors{
-        static let purple = "BrandPurple"
-        static let lightPurple = "BrandLightPurple"
-        static let blue = "BrandBlue"
-        static let lightBlue = "BrandLightBlue"
+        static let green = "BrandGreen"
+        static let lightGreen = "BrandLightGreen"
+        static let peach = "BrandPeach"
+        static let lightPeach = "BrandLightPeach"
     }
 }

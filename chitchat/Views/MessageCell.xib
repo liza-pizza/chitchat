@@ -37,7 +37,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" name="BrandPurple"/>
+                                <color key="backgroundColor" name="BrandGreen"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="u8o-F2-kKH" secondAttribute="bottom" constant="10" id="M6O-g8-8Po"/>
                                     <constraint firstAttribute="trailing" secondItem="u8o-F2-kKH" secondAttribute="trailing" constant="10" id="Xae-C1-Ss0"/>
@@ -73,13 +73,13 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="MeAvatar" width="36" height="36"/>
-        <image name="YouAvatar" width="36" height="36"/>
+        <image name="MeAvatar" width="125" height="125"/>
+        <image name="YouAvatar" width="125" height="125"/>
+        <namedColor name="BrandGreen">
+            <color red="0.098039215686274508" green="0.2627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="BrandLightPurple">
             <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="BrandPurple">
-            <color red="0.67500001192092896" green="0.43500000238418579" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
