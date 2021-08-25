@@ -6,4 +6,4 @@ used this project to try out the gitflow workflow
 
 ### Screenshots
 
-![app screenshots](ScreenShots.jpg)
+![app screenshots](ScreenShots2.jpg)
